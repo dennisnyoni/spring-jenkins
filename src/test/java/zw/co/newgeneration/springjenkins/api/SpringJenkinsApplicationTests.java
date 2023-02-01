@@ -7,15 +7,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class SpringJenkinsApplicationTests {
-    public static Logger logger= LoggerFactory.getLogger(SpringJenkinsApplicationTest.class);
+    public static Logger logger= LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
 
     @Test
     void contextLoads() {
         logger.info("Test case executing ... ");
-        assertEquals(true, ture);
+        assertEquals(true, true);
     }
 
 }
